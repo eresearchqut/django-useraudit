@@ -1,6 +1,6 @@
-from django.conf.urls import url, include
+from django.urls import re_path, include
 
 
 urlpatterns = [
-    url(r'^useraudit', include('useraudit.urls')),
+    re_path(r'^useraudit', include('useraudit.urls')),
 ]
